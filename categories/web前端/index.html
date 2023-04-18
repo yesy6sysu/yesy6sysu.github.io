@@ -24,26 +24,26 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="狗屁不通">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/categories/web%E5%89%8D%E7%AB%AF/index.html">
 <meta property="og:site_name" content="狗屁不通">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="柑蕉桔梨萝柚">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/categories/web%E5%89%8D%E7%AB%AF/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>狗屁不通</title>
+  <title>分类: web前端 | 狗屁不通</title>
   
 
 
@@ -157,82 +157,50 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content category">
             
-      
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/18/1_Hexo-Next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="柑蕉桔梨萝柚">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="狗屁不通">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/04/18/1_Hexo-Next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" class="post-title-link" itemprop="url">Hexo Next搭建博客如何添加背景</a>
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">web前端
+          <small>分类</small>
         </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-04-18 14:53:55 / 修改时间：20:34:03" itemprop="dateCreated datePublished" datetime="2023-04-18T14:53:55+08:00">2023-04-18</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">web前端</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-          <p>Hexo Next模板中的背景是一片白色，过于单调了，因此还是需要有设置背景的需求。首先打开Next主题下的<code>_config.xml</code>，并定位到<code>custom_file_path</code>，将<code>style</code>选项的注释取消掉：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-
-<p>确保根目录中的<code>source/_data/</code>目录下有对应的<code>styles.styl</code>文件，没有则需要创建。在其中加入以下内容：</p>
-<figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">      <span class="attribute">background</span>: <span class="built_in">url</span>(/images/background.jpg);  <span class="comment">// 背景url</span></span><br><span class="line">      <span class="attribute">background-size</span>: cover;                   <span class="comment">// 使背景能够覆盖整个页面</span></span><br><span class="line">      <span class="attribute">background-repeat</span>: no-repeat;             <span class="comment">// 背景不重复</span></span><br><span class="line">      <span class="attribute">background-attachment</span>: fixed;             <span class="comment">// 页面滚动时背景固定</span></span><br><span class="line">      <span class="attribute">background-position</span>: <span class="number">50%</span> <span class="number">50%</span>;             <span class="comment">// 背景置于页面中间</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其中，背景位于Next主题的<code>/next/source/images/</code>中，注意url的开头一定要带上<code>/</code>。<br>效果如下：<br><img src="/pics/1_Hexo-Next/1.png" alt="效果示例"></p>
-
-      
+    <div class="collection-year">
+      <span class="collection-header">2023</span>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2023-04-18T14:53:55+08:00"
+              content="2023-04-18">
+          04-18
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2023/04/18/1_Hexo-Next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" itemprop="url">
+            <span itemprop="name">Hexo Next搭建博客如何添加背景</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
 
   
 
